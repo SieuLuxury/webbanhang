@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Store</title>
+    <link rel="icon" href="/assets/images/placeholder.svg" type="image/svg+xml" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#ecfeff',
+                100: '#cffafe',
+                500: '#06b6d4',
+                600: '#0891b2',
+                700: '#0e7490',
+                900: '#164e63'
+              }
+            },
+            boxShadow: {
+              glow: '0 10px 35px rgba(6, 182, 212, 0.25)'
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/animations.css" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.prod.js",
+          "vue-router": "https://unpkg.com/vue-router@4.5.0/dist/vue-router.esm-browser.prod.js",
+          "pinia": "https://esm.sh/pinia@2.2.6?bundle",
+          "axios": "https://esm.sh/axios@1.8.4",
+          "vue-i18n": "https://unpkg.com/vue-i18n@9.14.1/dist/vue-i18n.esm-browser.prod.js",
+          "toastify-js": "https://esm.sh/toastify-js@1.12.0",
+          "gsap": "https://esm.sh/gsap@3.12.7"
+        }
+      }
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <div id="app"></div>
+
+    <script src="/env.js"></script>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
